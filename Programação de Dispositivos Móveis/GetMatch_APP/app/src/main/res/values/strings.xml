@@ -1,0 +1,17 @@
+<resources>
+    <string name="entrar">Entrar</string>
+    <string name="text_cadastro">Criar conta</string>
+    <string name="title_cadastro">Cadastre-se</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="app_name">NavDrawer</string>
+    <string name="perfil">Perfil</string>
+    <string name="criar_jogo">Criar Jogo</string>
+    <string name="encontar_jogo">Encontar Jogo</string>
+    <string name="campo">Campo</string>
+    <string name="inbox">Inbox</string>
+    <string name="outros">Outros</string>
+    <string name="configura_es">Configurações</string>
+    <string name="subtitle">baraget</string>
+    <!-- TODO: Remove or change this placeholder text -->
+</resources>

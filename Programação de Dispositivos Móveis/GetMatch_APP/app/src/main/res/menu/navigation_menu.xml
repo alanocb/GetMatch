@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/menuProfile"
+        android:icon="@drawable/profile"
+        android:title="@string/perfil"/>
+
+    <item android:id="@+id/menuBola_1"
+        android:icon="@drawable/bola_1"
+        android:title="@string/criar_jogo"/>
+
+    <item android:id="@+id/menuBolaCampo"
+        android:icon="@drawable/bolacampo"
+        android:title="@string/encontar_jogo"/>
+
+    <item android:id="@+id/menuCampo"
+        android:icon="@drawable/campo"
+        android:title="@string/campo"/>
+
+
+
+
+    </menu>

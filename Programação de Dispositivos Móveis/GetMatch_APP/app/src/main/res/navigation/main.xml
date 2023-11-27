@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/menuProfile">
+
+    <fragment
+        android:id="@+id/menuProfile"
+        android:name="com.pal.navigationdrawer.ProfileFragment"
+        android:label="Perfil"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/menuBola_1"
+        android:name="com.pal.navigationdrawer.JogoFragment"
+        android:label="Criar Jogo"
+        tools:layout="@layout/fragment_jogo" />
+    <fragment
+        android:id="@+id/menuBolaCampo"
+        android:name="com.pal.navigationdrawer.BolaCampoFragment"
+        android:label="Encontrar Jogo"
+        tools:layout="@layout/fragment_bola_campo" />
+    <fragment
+        android:id="@+id/menuCampo"
+        android:name="com.pal.navigationdrawer.CampoFragment"
+        android:label="Campo"
+        tools:layout="@layout/fragment_campo" />
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.pal.navigationdrawer.MapsFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_maps" />
+</navigation>
