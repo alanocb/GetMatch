@@ -1,5 +1,6 @@
 
-![IADE_Logotipo](https://github.com/alanocb/GetMatch/assets/99679262/8b1cf2d9-450c-401f-95fc-0503477ea318)
+![IADE_Logotipo](https://github.com/alanocb/GetMatch/assets/99679262/2aacdc2f-f248-4c71-84c5-8ebf7cc03488)
+
 
 # GetMatch
 # Projecto de Desenvolvimento Móvel
