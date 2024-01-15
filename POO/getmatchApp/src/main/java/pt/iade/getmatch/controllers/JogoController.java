@@ -2,6 +2,7 @@ package pt.iade.getmatch.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import pt.iade.getmatch.Repository.JogoRepository;
@@ -14,7 +15,9 @@ import pt.iade.getmatch.dto.request.JogoRequest;
 import pt.iade.getmatch.models.Jogo;
 import pt.iade.getmatch.models.ParticipanteJogo;
 
+
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping(path = "/api/jogo")
@@ -37,6 +40,13 @@ public class JogoController {
         return jogoRepository.findAll();
     }
 
+    @GetMapping(path = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
+    public Optional<Jogo> getId(@PathVariable("id") int id) {
+
+        return jogoRepository.findById(id);
+    }
+
+    
     @PostMapping
     public ResponseEntity<?> saveJogo(@RequestBody JogoRequest jogoRequest) {
         var user = this.userRepository.findById(jogoRequest.getIdUser());
@@ -68,12 +78,13 @@ public class JogoController {
                 participanteJogo.setUserId(participante);
                 this.participanteJogoRepository.save(participanteJogo);
             }
+            
         }
-
         var successResponse = new SuccessResponse();
         successResponse.setStatus(HttpStatus.OK.value());
         successResponse.setMessage("Jogo adicionado com sucesso!");
         return ResponseEntity.ok(successResponse);
-    }
+    }   
+
 
 }

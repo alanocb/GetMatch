@@ -17,7 +17,7 @@ public class ParticipanteJogo {
     private int jogoId;
 
     @Column(name = "estado_participante_jogo_id")
-    private int estadoParticipanteJogoId = 3;
+    private int estadoParticipanteJogoId;
 
     public ParticipanteJogo() {
     }

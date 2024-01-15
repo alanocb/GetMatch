@@ -10,7 +10,7 @@ public class JogoRequest {
     private int tipoCampo;
     private List<Integer> participantes;
 
-    public void JogoRequest() {
+    public JogoRequest() {
     }
 
     public int getIdUser() {

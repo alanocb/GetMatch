@@ -64,7 +64,7 @@ public class LoginActivity extends AppCompatActivity {
 
                 AuthRequest request = new AuthRequest();
                 request.setEmail(email);
-                request.setPassword(password);
+                request.setPass(password);
 
                 Call<UserAuthResponse> responseObj = clientApi.api.authenticate(request);
 
@@ -74,7 +74,7 @@ public class LoginActivity extends AppCompatActivity {
                         if (!response.isSuccessful()) {
                             Toast.makeText(
                                     getApplicationContext(),
-                                    "Erro ao autenticar usuario",
+                                    "Err ao autenticar usuario",
                                     Toast.LENGTH_LONG
                             ).show();
                         }else {

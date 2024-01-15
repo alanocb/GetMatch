@@ -2,7 +2,7 @@ package com.pal.navigationdrawer.dto.request;
 
 public class AuthRequest {
     private String email;
-    private String password;
+    private String pass;
 
     public AuthRequest() {}
 
@@ -14,11 +14,11 @@ public class AuthRequest {
         this.email = email;
     }
 
-    public String getPassword() {
-        return password;
+    public String getPass() {
+        return pass;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setPass(String pass) {
+        this.pass = pass;
     }
 }

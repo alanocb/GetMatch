@@ -22,7 +22,7 @@ public class AuthController {
 
 
     @PostMapping("/signin")
-    public ResponseEntity<?> signIn(@RequestBody User userRequest) {
+    public ResponseEntity<?> signin(@RequestBody User userRequest) {
         var emaill = userRequest.getEmail();
         var pass = userRequest.getPass();
 

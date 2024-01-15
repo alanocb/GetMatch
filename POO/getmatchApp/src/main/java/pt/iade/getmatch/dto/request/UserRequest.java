@@ -2,11 +2,11 @@ package pt.iade.getmatch.dto.request;
 
 public class UserRequest {
 
-    private String email;
+    private String emaill;
     private String pass;
 
-    public UserRequest(String email, String pass) {
-        this.email = email;
+    public UserRequest(String emaill, String pass) {
+        this.emaill = emaill;
         this.pass = pass;
     }
 
@@ -15,11 +15,11 @@ public class UserRequest {
     }
 
     public String getEmail() {
-        return email;
+        return emaill;
     }
 
     public void setEmail(String email) {
-        this.email = email;
+        this.emaill = email;
     }
 
     public String getPass() {

@@ -21,7 +21,7 @@ public interface ApiService {
     @GET("campo")
     Call<List<CampoResponse>> getAllCampos();
 
-    @POST("auth/signIn")
+    @POST("auth/signin")
     Call<UserAuthResponse> authenticate(@Body AuthRequest authRequest);
 
     @POST("users")

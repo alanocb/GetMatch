@@ -6,7 +6,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class ApiClient {
 
     public final ApiService api;
-    private final String baseUrl = "http://:8080";
+    private final String baseUrl = "http://10.0.2.2:8080";
 
     public ApiClient ()
     {

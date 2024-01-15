@@ -25,7 +25,7 @@ public class User implements Serializable {
     @Column(name = "usr_data_nasc")
     private LocalDate bDate;
 
-    @Column(name = "usr_email")
+    @Column(name = "usr_emaill")
     private String email;
 
     @Column(name = "usr_senha")
